@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Manipulating the DOM</title>
+  <!-- Load Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=PT+Serif&display=swap" rel="stylesheet">  <!-- Load Styles -->
+  <link href="css/styles.css" rel="stylesheet">
+</head>
+<body>
+    <!-- HTML Follows BEM naming conventions 
+  IDs are only used for sections to connect menu achors to sections -->
+  <header class="page__header">
+    <nav class="navbar__menu">
+      <!-- Navigation starts as empty UL that will be populated with JS -->
+      <ul id="navbar__list"></ul>
+    </nav>
+  </header>
+  <main>
+    <header class="main__hero">
+      <h1>Inspiration</h1>
+    </header>
+    <!-- Each Section has an ID (used for the anchor) and 
+    a data attribute that will populate the li node.
+    Adding more sections will automatically populate nav.
+    The first section is set to active class by default -->
+    <button onclick="scrollToTop()" id="backToTop" title="Back to top">Top</button>
+    <section id="section1" data-nav="Fitzgerald" class="active-class">
+      <div class="landing__container">
+        <h2><button>Never Too Late +</button></h2>        
+        <div class="content">
+          <p>For what it’s worth: it’s never too late or, in my case, too early to be whoever you want to be. There’s no time limit, stop whenever you want. You can change or stay the same, there are no rules to this thing. We can make the best or the worst of it. I hope you make the best of it. And I hope you see things that startle you. I hope you feel things you never felt before. I hope you meet people with a different point of view. I hope you live a life you’re proud of. If you find that you’re not, I hope you have the courage to start all over again.</p>
+          <p>- F. Scott Fitzgerald</p>
+        </div>
+      </div>
+    </section>
+    <section id="section2" data-nav="Twain">
+      <div class="landing__container">
+        <h2><button>Twenty Years + </button></h2>
+        <div class="content">
+          <p>Twenty years from now you will be more disappointed by the things you didn’t do than by the ones you did do. So throw off the bowlines. Sail away from the safe harbor. Catch the trade winds in your sails. Explore. Dream. Discover.</p>
+
+          <p>- Mark Twain (unconfirmed)</p>
+        </div>
+      </div>
+    </section>
+    <section id="section3" data-nav="Gaiman">
+      <div class="landing__container">
+        <h2><button>Surprise Yourself +</button></h2>
+        <div class="content">
+          <p>May your coming year be filled with magic and dreams and good madness. I hope you read some fine books and kiss someone who thinks you're wonderful, and don't forget to make some art -- write or draw or build or sing or live as only you can. And I hope, somewhere in the next year, you surprise yourself.</p>
+          <p>- Neil Gaiman</p>
+        <div>
+      </div>
+    </section>
+    <section id="section4" data-nav="Duke">
+      <div class="landing__container">
+        <h2><button>Never +</button></h2>
+        <div class="content">
+          <p>May your coming year be filled with magic and dreams and good madness. I hope you read some fine books and kiss someone who thinks you're wonderful, and don't forget to make some art -- write or draw or build or sing or live as only you can. And I hope, somewhere in the next year, you surprise yourself.</p>
+          <p>- Bill Duke</p>
+      </div>
+    </section>
+  </main>
+  <footer class="page__footer">
+    <p>&copy Ashe House</p>
+  </footer>
+  <script src="./js/app.js"></script>
+  
+</body>
+</html>

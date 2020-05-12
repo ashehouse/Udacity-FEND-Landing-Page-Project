@@ -1,0 +1,196 @@
+
+
+/* ---- Base Rules ---- */
+body {
+    background-image: url(../images/background-cement-concrete-paint-242236\ \(1\).jpg);
+    margin: 0;
+    font-family: 'PT Serif', serif;
+    color: #444;
+}
+
+
+/* Typeography General*/
+h1 {
+    font-family: 'PT Serif', serif;
+    font-size: 3em;
+    margin: 2em 1rem;
+}
+
+@media only screen and (min-width: 35em){
+    h1 {
+        font-size: 7em;
+        margin: 2em 4rem 1em;
+    }
+}
+
+h2 {
+    border-bottom: 1px solid #444;
+    font-family: 'PT Serif', serif;
+    font-size: 3em;
+    color: #444;
+}
+
+h2 button {
+    all: inherit;
+    cursor: pointer;
+}
+
+p {
+    line-height: 1.6em;
+    color: #444;
+}
+
+/* ---- Layout Rules ---- */
+main {
+    margin: 10vh 1em 10vh;
+}
+
+.main-hero {
+    min-height: 40vh;
+    padding-top: 3em;
+}
+
+section {
+    position: relative;
+    height: auto;
+}
+
+
+/* ---- Module Rules ---- */
+
+/* Navigation Styles*/
+
+header {
+    opacity: 1;
+    transition: ease .5s opacity;
+}
+
+.isHidden {
+    opacity: 0;
+}
+
+.navbar__menu ul {
+    padding-left: 0;
+    margin: 0;
+    text-align: right;
+}
+
+.navbar__menu li {
+    display: inline-block;
+    margin: 2%;
+}
+
+.navbar__menu .menu__link {
+    padding: 1em;
+    font-weight: bold;
+    text-decoration: none;
+    color: #444;
+    transition: ease .3s color;
+}
+
+.navbar__menu .menu__link.active{
+    background: rgb(146, 145, 145);
+    color: black;    
+}
+
+.navbar__menu .menu__link:hover {
+    background: rgb(146, 145, 145);
+    color: black;
+    transition: ease 0.3s all;
+    cursor: pointer;
+}
+
+button {
+    float: right;
+    background: whitesmoke;
+    color: #00000f;
+    align-content: center;
+    font-size: inherit;
+    height: 65px;
+    width: 65px;
+    cursor: pointer;
+    box-shadow:  5px 5px 5px #777777;
+}
+
+#backToTop {
+    display: none;
+    z-index: 99;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    float: right;
+}
+
+.content {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+
+/* Header Styles */
+.page__header {
+    background: #fff;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 5;
+}
+
+/* Footer Styles */
+.page__footer {
+    /* background: #000; */
+    padding: 3em;
+    color: #444;
+}
+
+.page__footer p{
+    color: #444;
+}
+
+
+/* ---- Theme Rules ---- */
+/* Landing Container Styles */
+.landing__container {
+    padding: 1em;
+    text-align: left;
+}
+
+@media only screen and (min-width: 35em){
+    .landing__container {
+        max-width: 50em;
+        padding: 4em;
+    }
+}
+
+section:nth-of-type(even) .landing__container {
+    margin-right: 0;
+    margin-left: auto;
+    text-align: right; 
+}
+
+
+
+/* ---- Theme State Rules ---- */
+/* Section Active Styles */
+/* Note: your-active-class class is applied through javascript. You should update the class here and in the index.html to what you set in your javascript file.  */
+section.active-class {
+    background: darkslategrey;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0) 100%); */
+}
+
+
+/* Section Active Styles Keyframe Animations */
+@keyframes rotate {
+	from {
+		transform: rotate(0deg)
+		           translate(-1em)
+		           rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg)
+		           translate(-1em) 
+		           rotate(-360deg);
+	}
+}
